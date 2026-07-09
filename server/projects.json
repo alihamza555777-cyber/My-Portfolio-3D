@@ -1,0 +1,45 @@
+[
+  {
+    "id": "proj-1",
+    "title": "SMC Trading Strategy",
+    "description": "A TradingView strategy script built with Pine Script v5, implementing Smart Money Concepts including Order Blocks, FVGs, and Liquidity Sweeps.",
+    "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop",
+    "tags": ["Pine Script", "TradingView", "SMC", "Algo Trading"],
+    "links": [
+      { "type": "GitHub", "url": "https://github.com/" },
+      { "type": "Live Demo", "url": "#" }
+    ]
+  },
+  {
+    "id": "proj-2",
+    "title": "Risk Management Tool",
+    "description": "A full-stack risk calculator for prop firm traders. Features real-time market data, preset profiles for firms like FTMO & Maven, and dynamic position sizing.",
+    "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+    "tags": ["Python", "React", "yfinance", "REST API"],
+    "links": [
+      { "type": "GitHub", "url": "https://github.com/" },
+      { "type": "Live Demo", "url": "#" }
+    ]
+  },
+  {
+    "id": "proj-3",
+    "title": "Portfolio Website",
+    "description": "A modern, responsive portfolio built with React and Vite, featuring glassmorphism design, scroll animations, and a premium dark theme with admin panel.",
+    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+    "tags": ["React", "Vite", "CSS3", "Node.js"],
+    "links": [
+      { "type": "GitHub", "url": "https://github.com/" },
+      { "type": "Website", "url": "#" }
+    ]
+  },
+  {
+    "id": "proj-4",
+    "title": "Hotel Management System",
+    "description": "A comprehensive desktop application developed in Java for hotel employees. It streamlines operations by managing room bookings, guest check-ins, and daily administrative tasks efficiently on PC.",
+    "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop",
+    "tags": ["Java", "Desktop App", "GUI", "Database"],
+    "links": [
+      { "type": "GitHub", "url": "https://github.com/" }
+    ]
+  }
+]
