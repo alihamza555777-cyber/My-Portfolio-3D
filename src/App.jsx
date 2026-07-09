@@ -1,15 +1,18 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './sections/Hero';
-import About from './sections/About';
+import Experience from './sections/Experience';
 import Projects from './sections/Projects';
+import About from './sections/About';
 import Certificates from './sections/Certificates';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 
 // Public portfolio page
 function PortfolioPage() {
+  const [infoModalOpen, setInfoModalOpen] = useState(false);
+
   // Intersection Observer for fade-in animations
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -39,10 +42,22 @@ function PortfolioPage() {
     <>
       <Navbar />
       <main>
-        <Hero />
-        <About />
+        {/* Cinematic Spotlight Header */}
+        <Hero onOpenInfo={() => setInfoModalOpen(true)} />
+        
+        {/* Continue Watching row */}
+        <Experience />
+        
+        {/* Trending Now row */}
         <Projects />
+        
+        {/* Critically Acclaimed Skills row & Bio modal */}
+        <About isInfoOpen={infoModalOpen} onCloseInfo={() => setInfoModalOpen(false)} />
+        
+        {/* My List / Certificates row */}
         <Certificates />
+        
+        {/* Sign In contact form */}
         <Contact />
       </main>
       <Footer />

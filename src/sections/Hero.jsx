@@ -1,45 +1,49 @@
-import { Sparkles } from 'lucide-react';
+import { Play, Info } from 'lucide-react';
 
-export default function Hero() {
+export default function Hero({ onOpenInfo }) {
+  // A premium developer workspace visual for the background
+  const bgImage = "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1600&auto=format&fit=crop&q=80";
+
   return (
-    <section id="hero" className="hero">
-      {/* Animated background orbs */}
-      <div className="hero-bg">
-        <div className="orb orb-1"></div>
-        <div className="orb orb-2"></div>
-        <div className="orb orb-3"></div>
-      </div>
-
-      {/* Grid overlay */}
-      <div className="hero-grid"></div>
-
-      <div className="hero-content">
-        <div className="hero-badge">
-          <span className="dot"></span>
-          Available for opportunities
+    <section 
+      id="hero" 
+      className="billboard-container"
+      style={{ backgroundImage: `url(${bgImage})` }}
+    >
+      <div className="billboard-overlay"></div>
+      
+      <div className="billboard-content">
+        <div className="billboard-logo">
+          <span style={{ color: 'var(--accent-primary)', fontWeight: '900', fontSize: '1.2rem', fontFamily: 'Impact, sans-serif' }}>N</span>
+          <span style={{ letterSpacing: '2px', fontSize: '0.75rem', fontWeight: 'bold' }}>ORIGINAL PORTFOLIO</span>
         </div>
-
-        <h1 className="hero-title">
-          Hi, I'm <span className="gradient-text">Ali Hamza</span>
-        </h1>
-
-        <p className="hero-subtitle">
-          A passionate developer who crafts elegant digital experiences 
-          from intelligent trading tools to stunning web interfaces. 
-          I turn complex ideas into clean, powerful software.
+        
+        <h1 className="billboard-title">Ali Hamza</h1>
+        
+        <div className="billboard-meta">
+          <span className="billboard-match">99% Match</span>
+          <span>2026</span>
+          <span className="billboard-rating">PG-13</span>
+          <span>3+ Years Coding</span>
+        </div>
+        
+        <p className="billboard-synopsis">
+          A software engineer focused on building optimized, high-performance applications. 
+          By combining low-level systems architecture and robust data structures with modern 
+          full-stack web technologies, he turns complex ideas into clean, powerful software.
         </p>
-
-        <div className="hero-actions">
-          <a href="#projects" className="btn btn-primary">
-            <Sparkles size={16} />
-            View My Work
+        
+        <div className="billboard-actions">
+          <a href="#contact" className="netflix-btn primary">
+            <Play size={20} fill="currentColor" />
+            Hire Me
           </a>
-          <a href="#contact" className="btn btn-secondary">
-            Get In Touch
-          </a>
+          <button onClick={onOpenInfo} className="netflix-btn secondary">
+            <Info size={20} />
+            More Info
+          </button>
         </div>
       </div>
-
     </section>
   );
 }

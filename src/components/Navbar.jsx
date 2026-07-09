@@ -13,11 +13,10 @@ export default function Navbar() {
   const handleLinkClick = () => setMenuOpen(false);
 
   return (
-    <nav id="navbar" className={`navbar${scrolled ? ' scrolled' : ''}`}>
+    <nav id="navbar" className={`navbar netflix-style${scrolled ? ' scrolled' : ''}`}>
       <div className="navbar-inner">
-        <a href="#hero" className="navbar-logo" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <img src="/assets/hamzadev-logo.png" alt="HamzaDev Logo" style={{ width: '40px', height: '40px', borderRadius: '8px' }} />
-          <span>HamzaDev</span>
+        <a href="#hero" className="navbar-logo-netflix">
+          HamzaDev
         </a>
 
         <div
@@ -30,14 +29,12 @@ export default function Navbar() {
           <span></span>
         </div>
 
-        <div className={`navbar-links${menuOpen ? ' open' : ''}`}>
-          <a href="#about" onClick={handleLinkClick}>About</a>
+        <div className={`navbar-links netflix-links${menuOpen ? ' open' : ''}`}>
+          <a href="#hero" onClick={handleLinkClick}>Home</a>
           <a href="#projects" onClick={handleLinkClick}>Projects</a>
-          <a href="#certificates" onClick={handleLinkClick}>Certificates</a>
+          <a href="#skills" onClick={handleLinkClick}>Skills</a>
+          <a href="#experience" onClick={handleLinkClick}>Experience</a>
           <a href="#contact" onClick={handleLinkClick}>Contact</a>
-          <a href="#contact" className="nav-cta" onClick={handleLinkClick}>
-            Let's Talk
-          </a>
         </div>
       </div>
     </nav>
