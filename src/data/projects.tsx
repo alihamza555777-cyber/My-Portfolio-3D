@@ -76,6 +76,17 @@ const PROJECT_SKILLS = {
   sockerio: brand("Socket.io", "socketdotio-mono.svg"),
   docker: brand("Docker", "docker-mono.svg"),
   aws: brand("AWS", "cloudflare-mono.svg"),
+  pineScript: brand("Pine Script", "javascript-mono.svg"),
+  tradingView: brand("TradingView", "vercel-mono.svg"),
+  supabase: brand("Supabase", "supabase-mono.svg"),
+  java: brand("Java", "javascript-mono.svg"),
+  db: brand("Database", "postgresql-mono.svg"),
+  flutter: brand("Flutter", "react-mono.svg"),
+  dart: brand("Dart", "typescript-mono.svg"),
+  gemini: brand("Gemini API", "anthropic-mono.svg"),
+  vite: brand("Vite", "nextdotjs-mono.svg"),
+  gsap: brand("GSAP", "gsap-mono.svg"),
+  motion: brand("Framer Motion", "motion.svg"),
 };
 
 export type Project = {
@@ -92,183 +103,194 @@ export type Project = {
 
 const projects: Project[] = [
   {
-    id: "callhq",
-    category: "Voice AI",
-    title: "CallHQ.ai",
-    src: `${BASE_PATH}/callhq/callhq.png`,
-    screenshots: ["callhq.png"],
-    live: "https://callhq.ai",
-    skills: {
-      frontend: [
-        PROJECT_SKILLS.ts,
-        PROJECT_SKILLS.next,
-        PROJECT_SKILLS.react,
-        PROJECT_SKILLS.tailwind,
-      ],
-      backend: [
-        PROJECT_SKILLS.node,
-        PROJECT_SKILLS.python,
-        PROJECT_SKILLS.aiSDK,
-        PROJECT_SKILLS.anthropic,
-      ],
-    },
-    get content() {
-      return (
-        <div>
-          <TypographyP className="font-mono">
-            AI-powered voice agents for sales, customer engagement, and lead
-            generation — natural, human-like phone conversations at scale.
-          </TypographyP>
-          <ProjectsLinks live={this.live} />
-          <SlideShow images={[`${BASE_PATH}/callhq/callhq.png`]} />
-        </div>
-      );
-    },
-  },
-  {
-    id: "broki",
-    category: "Marketplace",
-    title: "Broki",
-    src: `${BASE_PATH}/broki/broki.png`,
-    screenshots: ["broki.png"],
-    live: "https://broki.in",
-    skills: {
-      frontend: [
-        PROJECT_SKILLS.ts,
-        PROJECT_SKILLS.next,
-        PROJECT_SKILLS.react,
-        PROJECT_SKILLS.tailwind,
-      ],
-      backend: [
-        PROJECT_SKILLS.node,
-        PROJECT_SKILLS.postgres,
-        PROJECT_SKILLS.mongo,
-      ],
-    },
-    get content() {
-      return (
-        <div>
-          <TypographyP className="font-mono">
-            One-stop marketplace for food &amp; beverage — cloud kitchens,
-            restaurants, and commercial spaces across Delhi NCR.
-          </TypographyP>
-          <ProjectsLinks live={this.live} />
-          <SlideShow images={[`${BASE_PATH}/broki/broki.png`]} />
-        </div>
-      );
-    },
-  },
-  {
-    id: "whatsapp",
-    category: "Messaging",
-    title: "CallHQ WhatsApp",
-    src: `${BASE_PATH}/whatsapp/whatsapp.png`,
-    screenshots: ["whatsapp.png"],
-    live: "https://whatsapp.callhq.ai",
-    skills: {
-      frontend: [PROJECT_SKILLS.react, PROJECT_SKILLS.ts, PROJECT_SKILLS.tailwind],
-      backend: [PROJECT_SKILLS.node, PROJECT_SKILLS.sockerio],
-    },
-    get content() {
-      return (
-        <div>
-          <TypographyP className="font-mono">
-            WhatsApp integration layer for CallHQ — automate customer
-            conversations and workflows over WhatsApp Business.
-          </TypographyP>
-          <ProjectsLinks live={this.live} />
-          <SlideShow images={[`${BASE_PATH}/whatsapp/whatsapp.png`]} />
-        </div>
-      );
-    },
-  },
-  {
-    id: "orrdr",
-    category: "Commerce",
-    title: "Orrdr",
-    src: `${BASE_PATH}/orrdr/orrdr.png`,
-    screenshots: ["orrdr.png"],
-    live: "https://orrdr.com",
-    skills: {
-      frontend: [
-        PROJECT_SKILLS.ts,
-        PROJECT_SKILLS.next,
-        PROJECT_SKILLS.react,
-        PROJECT_SKILLS.tailwind,
-      ],
-      backend: [PROJECT_SKILLS.node, PROJECT_SKILLS.postgres],
-    },
-    get content() {
-      return (
-        <div>
-          <TypographyP className="font-mono">
-            Commerce platform for ordering and fulfillment.
-          </TypographyP>
-          <ProjectsLinks live={this.live} />
-          <SlideShow images={[`${BASE_PATH}/orrdr/orrdr.png`]} />
-        </div>
-      );
-    },
-  },
-  {
-    id: "otoma8",
-    category: "AI Platform",
-    title: "Otoma8",
-    src: `${BASE_PATH}/otoma8/otoma8.png`,
-    screenshots: ["otoma8.png"],
-    live: "https://otoma8.com",
-    skills: {
-      frontend: [
-        PROJECT_SKILLS.ts,
-        PROJECT_SKILLS.next,
-        PROJECT_SKILLS.react,
-        PROJECT_SKILLS.tailwind,
-      ],
-      backend: [
-        PROJECT_SKILLS.node,
-        PROJECT_SKILLS.python,
-        PROJECT_SKILLS.aiSDK,
-      ],
-    },
-    get content() {
-      return (
-        <div>
-          <TypographyP className="font-mono">
-            AI platform co-founded alongside CallHQ and Broki — building the next
-            generation of business automation tools.
-          </TypographyP>
-          <ProjectsLinks live={this.live} />
-          <SlideShow images={[`${BASE_PATH}/otoma8/otoma8.png`]} />
-        </div>
-      );
-    },
-  },
-  {
-    id: "tesorobysania",
-    category: "E-commerce",
-    title: "Tesoro by Sania",
-    src: PLACEHOLDER_IMG,
+    id: "proj-1",
+    category: "Algo Trading",
+    title: "SMC Trading Strategy",
+    src: `${BASE_PATH}/trading-strategy.png`,
     screenshots: [],
-    live: "https://tesorobysania.com",
     skills: {
-      frontend: [
-        PROJECT_SKILLS.ts,
-        PROJECT_SKILLS.next,
-        PROJECT_SKILLS.react,
-        PROJECT_SKILLS.tailwind,
-      ],
-      backend: [PROJECT_SKILLS.node],
+      frontend: [PROJECT_SKILLS.pineScript],
+      backend: [PROJECT_SKILLS.tradingView],
     },
     get content() {
       return (
         <div>
           <TypographyP className="font-mono">
-            Premium e-commerce storefront for Tesoro by Sania.
+            A TradingView strategy script built with Pine Script v5, implementing Smart Money Concepts including Order Blocks, FVGs, and Liquidity Sweeps.
           </TypographyP>
           <ProjectsLinks live={this.live} />
         </div>
       );
     },
+    github: "https://github.com/alihamza555777-cyber",
+    live: "#",
+  },
+  {
+    id: "proj-2",
+    category: "Fintech",
+    title: "Risk Management Tool",
+    src: `${BASE_PATH}/risk-management.png`,
+    screenshots: [],
+    skills: {
+      frontend: [PROJECT_SKILLS.react],
+      backend: [PROJECT_SKILLS.python, PROJECT_SKILLS.supabase],
+    },
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            A full-stack risk calculator for prop firm traders. Features real-time market data, preset profiles for firms like FTMO & Maven, and dynamic position sizing.
+          </TypographyP>
+          <ProjectsLinks live={this.live} />
+        </div>
+      );
+    },
+    github: "https://github.com/alihamza555777-cyber",
+    live: "#",
+  },
+  {
+    id: "proj-3",
+    category: "Web Dev",
+    title: "3D Design Portfolio",
+    src: `${BASE_PATH}/portfolio-3d.png`,
+    screenshots: [],
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.next,
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.ts,
+        PROJECT_SKILLS.tailwind,
+        PROJECT_SKILLS.gsap,
+        PROJECT_SKILLS.motion,
+      ],
+      backend: [PROJECT_SKILLS.sockerio, PROJECT_SKILLS.node],
+    },
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            A premium 3D design portfolio built with Next.js, TypeScript, and React. Features immersive Spline 3D interactions, high-performance GSAP and Framer Motion transitions, Socket.io real-time connection counters, and full-screen overlay navigation.
+          </TypographyP>
+          <ProjectsLinks live={this.live} />
+        </div>
+      );
+    },
+    github: "https://github.com/alihamza555777-cyber",
+    live: "#",
+  },
+  {
+    id: "proj-4",
+    category: "Desktop App",
+    title: "Hotel Management System",
+    src: `${BASE_PATH}/hotel-management.jpg`,
+    screenshots: [],
+    skills: {
+      frontend: [PROJECT_SKILLS.java],
+      backend: [PROJECT_SKILLS.db],
+    },
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            A comprehensive desktop application developed in Java for hotel employees. It streamlines operations by managing room bookings, guest check-ins, and daily administrative tasks efficiently on PC.
+          </TypographyP>
+          <ProjectsLinks live={this.live} />
+        </div>
+      );
+    },
+    github: "https://github.com/alihamza555777-cyber",
+    live: "",
+  },
+  {
+    id: "proj-5",
+    category: "AI App Dev",
+    title: "Halal AI Lens",
+    src: `${BASE_PATH}/halal-ai-lens.jpg`,
+    screenshots: [],
+    skills: {
+      frontend: [PROJECT_SKILLS.flutter, PROJECT_SKILLS.dart],
+      backend: [PROJECT_SKILLS.gemini],
+    },
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            A Flutter mobile application that scans product ingredient lists and E-numbers to instantly identify Halal, Haram, or Mushbooh status with detailed Gemini-powered analysis.
+          </TypographyP>
+          <ProjectsLinks live={this.live} />
+        </div>
+      );
+    },
+    github: "https://github.com/ali-hamza/halal-ai-lens",
+    live: "",
+  },
+];
+
+export type Certification = {
+  id: string;
+  title: string;
+  issuer: string;
+  date: string;
+  url: string;
+  image?: string;
+};
+
+export const CERTIFICATIONS: Certification[] = [
+  {
+    id: "cert-1",
+    title: "Software Engineer Intern Certification",
+    issuer: "HackerRank",
+    date: "April 25, 2026",
+    url: "https://www.hackerrank.com/certificates/a24b0e89e608",
+    image: "/images/certifications/hackerrank-intern-thumb.png",
+  },
+  {
+    id: "cert-2",
+    title: "Google AI Essentials Specialization",
+    issuer: "Google",
+    date: "July 1, 2026",
+    url: "https://coursera.org/share/c6e7e20f9f1af410ad097749e1564b62",
+    image: "/images/certifications/ai-essentials-thumb.png",
+  },
+  {
+    id: "cert-3",
+    title: "Stay Ahead of the AI Curve",
+    issuer: "Google",
+    date: "July 1, 2026",
+    url: "https://coursera.org/share/cce848292a61becc749052a84df6e1a5",
+    image: "/images/certifications/ai-essentials-thumb.png",
+  },
+  {
+    id: "cert-4",
+    title: "Discover the Art of Prompting",
+    issuer: "Google",
+    date: "June 30, 2026",
+    url: "https://coursera.org/share/f8943422ea3b1335b85e53ba058312d1",
+    image: "/images/certifications/ai-essentials-thumb.png",
+  },
+  {
+    id: "cert-5",
+    title: "Use AI Responsibly",
+    issuer: "Google",
+    date: "June 30, 2026",
+    url: "https://coursera.org/share/aaaad9d2a33cea75f90593b815603a37",
+    image: "/images/certifications/ai-essentials-thumb.png",
+  },
+  {
+    id: "cert-6",
+    title: "Maximize Productivity with AI Tools",
+    issuer: "Google",
+    date: "June 26, 2026",
+    url: "https://coursera.org/share/2bd0ea5b4995848694f4c81e97976e28",
+    image: "/images/certifications/ai-essentials-thumb.png",
+  },
+  {
+    id: "cert-7",
+    title: "Introduction to AI",
+    issuer: "Google",
+    date: "June 5, 2026",
+    url: "https://coursera.org/share/3d53f5f2a06e084a7dae707a21f3169f",
+    image: "/images/certifications/ai-essentials-thumb.png",
   },
 ];
 

@@ -4,6 +4,8 @@ import { Zap, ZapOff } from "lucide-react";
 import { setMotionPreference, usePerfProfile } from "@/hooks/use-perf-profile";
 import { Button } from "./ui/button";
 
+import { cn } from "@/lib/utils";
+
 /**
  * Menu control to toggle reduced motion. Flips the effective motion state to an
  * explicit, persisted preference: turning it off drops the 3D scene, particles
@@ -21,7 +23,10 @@ export default function MotionToggle({ className }: { className?: string }) {
       onClick={() => setMotionPreference(reducedMotion ? "on" : "off")}
       aria-pressed={reducedMotion}
       aria-label={motionOn ? "Reduce motion and disable 3D" : "Enable motion and 3D"}
-      className={'bg-transparent gap-2 flex text-muted group hover:bg-transparent border-2 text-xs'}
+      className={cn(
+        "bg-transparent gap-2 flex text-muted group hover:bg-transparent border-2 text-xs",
+        className
+      )}
       size={'sm'}
     >
       <Icon className="size-4 shrink-0 text-muted-foreground transition-colors group-hover:text-foreground" />

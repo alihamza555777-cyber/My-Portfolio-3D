@@ -1,41 +1,38 @@
 const config = {
-  title: "Akash Malhotra | Co-Founder & Engineer",
+  title: "Ali Hamza | Software Engineer Student",
   description: {
-    long: "Explore the portfolio of Akash Malhotra — Co-Founder of CallHQ.ai, Broki, and Otoma8. Former Senior Lead Software Engineer at Adobe with 12+ years building AI voice agents, commerce platforms, and scalable products.",
+    long: "Explore the 3D portfolio of Ali Hamza — Software Engineer Student studying at the University of Gujrat. Building modern web applications, 3D interactive interfaces, and cross-platform mobile apps with Next.js, React, and Flutter.",
     short:
-      "Portfolio of Akash Malhotra — Co-Founder, engineer, and ex-Adobe tech lead building AI and commerce products.",
+      "Portfolio of Ali Hamza — Software Engineer Student building modern web, mobile, and 3D applications.",
   },
   keywords: [
-    "Akash Malhotra",
+    "Ali Hamza",
     "portfolio",
-    "CallHQ",
-    "Broki",
-    "Otoma8",
-    "voice AI",
-    "full-stack developer",
-    "co-founder",
-    "Adobe",
+    "software engineer student",
+    "student developer",
+    "University of Gujrat",
     "React",
     "Next.js",
     "TypeScript",
+    "3D portfolio",
+    "Flutter",
   ],
-  author: "Akash Malhotra",
-  email: "contact@broki.in",
-  site: "https://broki.in",
+  author: "Ali Hamza",
+  email: "hamzamughal555777@gmail.com",
+  site: "hamzamughal555777@gmail.com",
 
   // for github stars button
-  githubUsername: "akashrmalhotra",
-  githubRepo: "3d-portfolio-next",
+  githubUsername: "alihamza555777-cyber",
+  githubRepo: "My-Portfolio-3D",
 
   get ogImg() {
-    return this.site + "/assets/seo/og-image.png";
+    return "/assets/seo/og-image.png";
   },
   social: {
-    twitter: "https://www.linkedin.com/in/akashrmalhotra",
-    linkedin: "https://www.linkedin.com/in/akashrmalhotra",
-    instagram: "https://www.linkedin.com/in/akashrmalhotra",
-    facebook: "https://www.linkedin.com/in/akashrmalhotra",
-    github: "https://github.com/akashrmalhotra",
+    linkedin: "https://www.linkedin.com/in/ali-hamza-578b0a328?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+    instagram: "https://www.instagram.com/hamzii_x_",
+    facebook: "https://www.linkedin.com/in/ali-hamza-578b0a328?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+    github: "https://github.com/alihamza555777-cyber",
   },
 };
 export { config };

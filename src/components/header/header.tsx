@@ -8,6 +8,7 @@ import { opacity, background } from "./anim";
 import Nav from "./nav";
 import { cn } from "@/lib/utils";
 import FunnyThemeToggle from "../theme/funny-theme-toggle";
+import MotionToggle from "../motion-toggle";
 import { Button } from "../ui/button";
 import { config } from "@/data/config";
 import OnlineUsers from "../realtime/online-users";
@@ -58,6 +59,7 @@ const Header = ({ loader }: HeaderProps) => {
 
         <FunnyThemeToggle className="w-6 h-6 mr-4 hidden md:flex" />
         {isHome && process.env.NEXT_PUBLIC_WS_URL && <OnlineUsers />}
+        <MotionToggle className="mr-4" />
         {config.githubUsername && config.githubRepo && (
           <GitHubStarsButton
             username={config.githubUsername}

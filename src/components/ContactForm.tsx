@@ -45,7 +45,7 @@ const ContactForm = () => {
 
     setLoading(true);
     try {
-      const res = await fetch("/api/send", {
+      const res = await fetch("https://formspree.io/f/xjgjzpee", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ fullName, email, message }),
